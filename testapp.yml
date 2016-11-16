@@ -1,14 +1,5 @@
 ---
-applications:
-- name: p-cqrs-idsync-handler-1-2-3-blue
-  memory: 4096M
-  instances: 6
-  buildpack: covs-java-II
-  host: idsync-handler-1-blue
-  domain: run.covapp.io
-  services:
-  - logstash-drain
-  env:
+env:
     apiregistrations_baseServiceUrl: "http://localhost"
     cache_tif_core_property_secs: "900"
     rabbitmq_cqrs_exchange_name: "covisint.cqrs.events.blue"
