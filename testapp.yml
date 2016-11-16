@@ -1,11 +1,11 @@
 ---
 applications:
-- name: p-cqrs-idsync-handler-1-2-3-blue
+- name: "p-cqrs-idsync-handler-1-2-3-blue"
   memory: 4096M
   instances: 6
   buildpack: covs-java-II
   host: idsync-handler-1-blue
-  domain: run.covapp.io
+  domain: "run.covapp.io"
   services:
   - logstash-drain
  
